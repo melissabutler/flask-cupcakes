@@ -63,3 +63,8 @@ def delete_cupcake(cupcake_id):
     db.session.delete(cupcake)
     db.session.commit()
     return jsonify(message="deleted")
+
+@app.route('/')
+def show_home_page():
+    """ Renders home page"""
+    return render_template('home.html')

@@ -21,7 +21,7 @@ class Cupcake(db.Model):
                      nullable=False)
     image=db.Column(db.Text,
                     nullable=False,
-                    default="https://tinyurl.com/demo-cupcake")
+                    default="https://celebratingsweets.com/wp-content/uploads/2023/05/Small-Batch-Vanilla-Cupcakes-9.jpg")
     
     def serialize(self):
         """Returns a dict representation of cupcake which can be turned into JSON"""
